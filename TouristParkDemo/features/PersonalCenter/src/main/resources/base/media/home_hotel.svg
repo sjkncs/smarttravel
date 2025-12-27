@@ -1,0 +1,30 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M16 32C7.16 32 0 24.83 0 16C0 7.16 7.16 0 16 0C24.83 0 32 7.16 32 16C32 24.83 24.83 32 16 32Z"
+          fill="#8D78FB" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M10.13 20.46C15.79 20.46 20.37 15.88 20.37 10.23C20.37 5.48 17.13 1.48 12.73 0.33C6.43 1.63 1.48 6.65 0.28 12.99C1.48 17.3 5.44 20.46 10.13 20.46Z"
+          fill="#FFFFFF" fill-opacity="0.200000" fill-rule="evenodd"/>
+    <path d="M16 32C24.83 32 32 24.83 32 16C32 15 31.9 14.03 31.73 13.09C29 10.5 25.3 8.91 21.24 8.91C12.81 8.91 5.98 15.74 5.98 24.17C5.98 25.89 6.26 27.54 6.79 29.08C9.39 30.92 12.57 32 16 32Z"
+          fill="#FFFFFF" fill-opacity="0.149020" fill-rule="evenodd"/>
+    <path d="M23.1759 13.2021L23.1759 22.3837L23.9742 22.3837L23.9742 23.1821L8.00623 23.1821L8.00623 22.3837L8.80469 22.3837L8.80469 8.81208C8.80432 8.60033 8.88818 8.39713 9.0376 8.24717C9.18713 8.09722 9.39014 8.0128 9.60181 8.01248L18.3867 8.01248C18.8274 8.0138 19.1838 8.37141 19.1838 8.81208L19.1838 22.3837L19.9823 22.3837L19.9823 13.2021C19.9823 13.0962 20.0243 12.9947 20.0992 12.9198C20.1741 12.845 20.2756 12.8029 20.3815 12.8029L22.7767 12.8029C22.9972 12.8029 23.1759 12.9816 23.1759 13.2021ZM11.599 12.0045L11.599 11.2061L16.3894 11.2061L16.3894 12.0045L11.599 12.0045ZM11.599 14.3997L11.599 13.6013L16.3894 13.6013L16.3894 14.3997L11.599 14.3997ZM11.599 15.9965L11.599 16.7949L16.3894 16.7949L16.3894 15.9965L11.599 15.9965ZM11.599 19.1901L11.599 18.3917L16.3894 18.3917L16.3894 19.1901L11.599 19.1901Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

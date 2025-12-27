@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - /*
+  -    Copyright (c) 2025 Huawei Device Co., Ltd.
+  -    Licensed under the Apache License, Version 2.0 (the "License");
+  -    you may not use this file except in compliance with the License.
+  -    You may obtain a copy of the License at
+  -    http://www.apache.org/licenses/LICENSE-2.0
+  -    Unless required by applicable law or agreed to in writing, software
+  -    distributed under the License is distributed on an "AS IS" BASIS,
+  -    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -    See the License for the specific language governing permissions and
+  -    limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B4EC51" offset="0%"></stop>
+            <stop stop-color="#429321" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="39.8197183" height="26.3323944" rx="6.84"></rect>
+        <filter x="-21.9%" y="-33.2%" width="143.9%" height="166.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-8" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.722876735   0 0 0 0 0.98059082   0 0 0 0 0.722435993  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M33.0760563,8.90391452 L33.0760563,16.7862263 C31.2356575,16.7862263 29.7436837,18.3285182 29.7436837,20.2309859 L10.3971613,20.2309859 C10.3971613,18.3285182 8.90518754,16.7862263 7.06478873,16.7862263 L7.06478873,8.90391452 C8.90518754,8.90391452 10.3971613,7.36162269 10.3971613,5.45915493 L29.7436837,5.45915493 C29.7436837,7.36162269 31.2356575,8.90391452 33.0760563,8.90391452 Z" id="path-4"></path>
+        <filter x="-50.0%" y="-74.5%" width="200.0%" height="276.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.458823529   0 0 0 0 0.752941176   0 0 0 0 0.415686275  0 0 0 0.613650022 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#B4EC51" offset="0%"></stop>
+            <stop stop-color="#429321" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="方特" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的" transform="translate(-280.000000, -243.000000)">
+            <g id="Group-2" transform="translate(281.000000, 243.000000)">
+                <path d="M12.5808848,4.57570424 L29.0417298,4.57570424 C32.8193575,4.57570424 35.8817298,7.63807655 35.8817298,11.4157042 L35.8817298,17.0033099 C35.8817298,20.7809376 32.8193575,23.8433099 29.0417298,23.8433099 L12.5808848,23.8433099 C8.80325706,23.8433099 5.74088475,20.7809376 5.74088475,17.0033099 L5.74088475,11.4157042 C5.74088475,7.63807655 8.80325706,4.57570424 12.5808848,4.57570424 Z" id="Rectangle" fill="url(#linearGradient-1)" transform="translate(20.811307, 14.209507) rotate(-19.000000) translate(-20.811307, -14.209507) "></path>
+                <g id="Group" transform="translate(0.000000, 12.371831)">
+                    <g id="Rectangle">
+                        <use fill="#CAFFE5" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use stroke-opacity="0.397419963" stroke="#FFFFFF" stroke-width="1.4724468" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Stroke-1">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+                <text id="¥" fill="url(#linearGradient-6)" fill-rule="nonzero" font-family="HarmonyHeiTi-Bold, HarmonyHeiTi" font-size="12" font-weight="bold">
+                    <tspan x="16" y="29">¥</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

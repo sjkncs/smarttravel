@@ -1,0 +1,29 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="29.698242" height="29.698486" viewBox="0 0 29.6982 29.6985" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M7.42 22.27C11.52 26.37 18.17 26.37 22.27 22.27C26.37 18.17 26.37 11.52 22.27 7.42C18.17 3.32 11.52 3.32 7.42 7.42C3.32 11.52 3.32 18.17 7.42 22.27Z"
+          fill="#0A57F9" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="" fill="#333333" fill-opacity="0" fill-rule="evenodd"/>
+    <path d="M18.93 10.76L8.53 15.96L12.99 16.7L13.73 21.16L18.93 10.76Z" fill="#FFFFFF" fill-opacity="1.000000"
+          fill-rule="evenodd"/>
+    <path d="M8.53 15.96L12.99 16.7L13.73 21.16L18.93 10.76L8.53 15.96Z" stroke="#FFFFFF" stroke-opacity="1.000000"
+          stroke-width="2.000000" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - /*
+  -    Copyright (c) 2025 Huawei Device Co., Ltd.
+  -    Licensed under the Apache License, Version 2.0 (the "License");
+  -    you may not use this file except in compliance with the License.
+  -    You may obtain a copy of the License at
+  -    http://www.apache.org/licenses/LICENSE-2.0
+  -    Unless required by applicable law or agreed to in writing, software
+  -    distributed under the License is distributed on an "AS IS" BASIS,
+  -    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -    See the License for the specific language governing permissions and
+  -    limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>tab/ic_备份 68</title>
+    <g id="方特" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的" transform="translate(-23.000000, -724.000000)" fill-rule="nonzero">
+            <g id="BottomNavigationBar/land/Basic/Item_5" transform="translate(0.000000, 708.000000)">
+                <g id="Bottom-tab/item/normal" transform="translate(0.000000, 16.000000)">
+                    <g id="编组" transform="translate(0.293445, 0.000000)">
+                        <g transform="translate(23.213404, 0.000000)" id="house_fill">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                            <g id="编组" transform="translate(1.000000, 1.000000)" fill="#CCCCCC">
+                                <path d="M19.38,11.07 C17.5533333,9.33 15.72,7.59333333 13.88,5.86 L12.06,4.16 C11.7533333,3.87333333 11.3966667,3.73 10.99,3.73 C10.5833333,3.73 10.2266667,3.87333333 9.92,4.16 L2.65,11.07 C2.52333333,11.1966667 2.42666667,11.34 2.36,11.5 C2.29333333,11.66 2.26,11.82 2.26,11.98 L2.26,18.99 C2.26,19.41 2.36,19.79 2.56,20.13 C2.76,20.4766667 3.03333333,20.75 3.38,20.95 C3.72666667,21.15 4.10666667,21.25 4.52,21.25 L17.5,21.25 C17.9,21.25 18.2733333,21.15 18.62,20.95 C18.9666667,20.75 19.24,20.4766667 19.44,20.13 C19.64,19.79 19.74,19.41 19.74,18.99 L19.74,11.96 C19.74,11.7866667 19.7066667,11.6233333 19.64,11.47 C19.5733333,11.3166667 19.4866667,11.1833333 19.38,11.07 Z" id="路径"></path>
+                                <path d="M0.49,10.47 C0.616666667,10.5966667 0.793333333,10.6666667 1.02,10.68 C1.24,10.6866667 1.41333333,10.6266667 1.54,10.5 L9.61,2.84 C10.01,2.45333333 10.4766667,2.26 11.01,2.26 C11.55,2.26 12.02,2.45333333 12.42,2.84 L20.48,10.47 C20.6266667,10.6166667 20.8033333,10.69 21.01,10.69 C21.2166667,10.69 21.3933333,10.61 21.54,10.45 C21.6666667,10.3033333 21.73,10.1266667 21.73,9.92 C21.73,9.71333333 21.6566667,9.53666667 21.51,9.39 L13.45,1.76 C13.0033333,1.32666667 12.4833333,1.03333333 11.89,0.88 C11.2966667,0.733333333 10.7033333,0.733333333 10.11,0.88 C9.51666667,1.03333333 8.99666667,1.32666667 8.55,1.76 L0.51,9.39 C0.35,9.53666667 0.27,9.71333333 0.27,9.92 C0.27,10.1266667 0.343333333,10.31 0.49,10.47 Z" id="路径"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

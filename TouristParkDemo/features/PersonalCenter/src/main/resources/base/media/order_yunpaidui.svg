@@ -1,0 +1,30 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M16 32C7.16 32 0 24.83 0 16C0 7.16 7.16 0 16 0C24.83 0 32 7.16 32 16C32 24.83 24.83 32 16 32Z"
+          fill="#458EF8" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M10.13 20.46C15.79 20.46 20.37 15.88 20.37 10.23C20.37 5.48 17.13 1.48 12.73 0.33C6.43 1.63 1.48 6.65 0.28 12.99C1.48 17.3 5.44 20.46 10.13 20.46Z"
+          fill="#FFFFFF" fill-opacity="0.200000" fill-rule="evenodd"/>
+    <path d="M16 32C24.83 32 32 24.83 32 16C32 15 31.9 14.03 31.73 13.09C29 10.5 25.3 8.91 21.24 8.91C12.81 8.91 5.98 15.74 5.98 24.17C5.98 25.89 6.26 27.54 6.79 29.08C9.39 30.92 12.57 32 16 32Z"
+          fill="#FFFFFF" fill-opacity="0.149020" fill-rule="evenodd"/>
+    <path d="M19.929 12.4126C19.1133 10.8568 17.4163 9.78412 15.4465 9.78412C12.8086 9.78412 10.6521 11.7087 10.4651 14.1462C8.52539 14.6666 7.11279 16.2617 7.11279 18.1488C7.11279 20.3748 9.07837 22.2038 11.5571 22.3312L19.8911 22.3312C22.6504 22.3312 24.8906 20.1071 24.8906 17.3644C24.8906 14.7209 22.6963 12.568 19.929 12.4126ZM11.959 16.585L19.0701 13.6292L16.0713 20.7546L14.9004 17.813L11.959 16.585Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

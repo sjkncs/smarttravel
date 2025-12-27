@@ -1,0 +1,30 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <mask id="mask80_7208" mask-type="alpha" maskUnits="userSpaceOnUse" x="1.333374" y="1.333313" width="12.843918"
+          height="12.927292">
+        <path d="M6.91675 1.33331C10.0002 1.33331 12.5 3.83307 12.5 6.91666C12.5 8.29968 11.9972 9.56525 11.1643 10.5405C11.1558 10.5506 11.1472 10.5605 11.1385 10.5705C10.9286 10.8129 10.6981 11.037 10.4497 11.2402C9.4873 12.0276 8.2572 12.5 6.91675 12.5C3.83313 12.5 1.33337 10.0002 1.33337 6.91666C1.33337 3.83307 3.83313 1.33331 6.91675 1.33331ZM6.91675 2.33331C4.38538 2.33331 2.33337 4.38535 2.33337 6.91666C2.33337 9.44794 4.38538 11.5 6.91675 11.5C9.448 11.5 11.5 9.44794 11.5 6.91666C11.5 4.38535 9.448 2.33331 6.91675 2.33331ZM10.9233 11.7137L13.4336 14.224C13.4824 14.2728 13.5615 14.2728 13.6104 14.224L14.1406 13.6937C14.1895 13.6448 14.1895 13.5657 14.1406 13.5169L11.6371 11.0132C11.4182 11.2653 11.1794 11.4995 10.9233 11.7137Z"
+              clip-rule="evenodd" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+    </mask>
+    <g mask="url(#mask80_7208)">
+        <rect width="16.000000" height="16.000000" fill="#000000" fill-opacity="0.600000"/>
+    </g>
+</svg>

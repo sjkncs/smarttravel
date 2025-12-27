@@ -1,0 +1,564 @@
+/**
+ * 关系型数据库管理器 - 使用方舟ArkData关系型数据库
+ * 用于存储用户数据、收藏记录、浏览历史等复杂数据
+ */
+import { relationalStore } from '@kit.ArkData';
+
+// 用户信息表结构
+export interface UserInfo {
+  id?: number;
+  userId: string;
+  username: string;
+  email?: string;
+  avatar?: string;
+  preferences?: string; // JSON字符串存储用户偏好
+  createdAt: number;
+  updatedAt: number;
+}
+
+// 收藏记录表结构
+export interface FavoriteRecord {
+  id?: number;
+  userId: string;
+  itemId: string;
+  itemType: string; // activity, restaurant, hotel等
+  itemTitle: string;
+  itemDescription?: string;
+  itemImageUrl?: string;
+  createdAt: number;
+}
+
+// 浏览历史表结构
+export interface BrowseHistory {
+  id?: number;
+  userId: string;
+  itemId: string;
+  itemType: string;
+  itemTitle: string;
+  visitCount: number;
+  lastVisitTime: number;
+  createdAt: number;
+}
+
+// 评论记录表结构
+export interface ReviewRecord {
+  id?: number;
+  userId: string;
+  itemId: string;
+  itemType: string; // restaurant, hotel, attraction等
+  rating: number; // 1-5星
+  content: string;
+  images?: string; // JSON数组
+  helpful: number; // 有用数
+  createdAt: number;
+}
+
+// 订单记录表结构
+export interface OrderRecord {
+  id?: number;
+  userId: string;
+  orderNo: string;
+  itemId: string;
+  itemType: string; // hotel, ticket, tour等
+  itemTitle: string;
+  quantity: number;
+  price: number;
+  totalAmount: number;
+  status: string; // pending, paid, cancelled, completed
+  contactName: string;
+  contactPhone: string;
+  createdAt: number;
+  updatedAt: number;
+}
+
+// 搜索历史表结构
+export interface SearchHistory {
+  id?: number;
+  userId: string;
+  keyword: string;
+  category: string;
+  searchCount: number;
+  lastSearchTime: number;
+  createdAt: number;
+}
+
+export class RelationalDatabaseManager {
+  private static instance: RelationalDatabaseManager;
+  private store: relationalStore.RdbStore | null = null;
+  private readonly DATABASE_NAME = 'SmartTravel.db';
+  private readonly DATABASE_VERSION = 1;
+
+  private constructor() {}
+
+  public static getInstance(): RelationalDatabaseManager {
+    if (!RelationalDatabaseManager.instance) {
+      RelationalDatabaseManager.instance = new RelationalDatabaseManager();
+    }
+    return RelationalDatabaseManager.instance;
+  }
+
+  /**
+   * 初始化数据库
+   */
+  async initialize(context: Context): Promise<void> {
+    try {
+      const config: relationalStore.StoreConfig = {
+        name: this.DATABASE_NAME,
+        securityLevel: relationalStore.SecurityLevel.S1
+      };
+
+      this.store = await relationalStore.getRdbStore(context, config);
+      console.info('[RelationalDB] 数据库初始化成功');
+
+      // 创建表
+      await this.createTables();
+    } catch (error) {
+      console.error('[RelationalDB] 初始化失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 创建所有表
+   */
+  private async createTables(): Promise<void> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      await this.createUserInfoTable();
+      await this.createFavoriteRecordTable();
+      await this.createBrowseHistoryTable();
+      await this.createReviewRecordTable();
+      await this.createOrderRecordTable();
+      await this.createTripRecordTable();
+      await this.createSearchHistoryTable();
+          email TEXT,
+          avatar TEXT,
+          preferences TEXT,
+          createdAt INTEGER NOT NULL,
+          updatedAt INTEGER NOT NULL
+        )
+      `;
+      await this.store.executeSql(createUserTableSql);
+
+      // 创建收藏表
+      const createFavoriteTableSql = `
+        CREATE TABLE IF NOT EXISTS favorites (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          userId TEXT NOT NULL,
+          itemId TEXT NOT NULL,
+          itemType TEXT NOT NULL,
+          itemTitle TEXT NOT NULL,
+          itemDescription TEXT,
+          itemImageUrl TEXT,
+          createdAt INTEGER NOT NULL,
+          UNIQUE(userId, itemId, itemType)
+        )
+      `;
+      await this.store.executeSql(createFavoriteTableSql);
+
+      // 创建浏览历史表
+      const createHistoryTableSql = `
+        CREATE TABLE IF NOT EXISTS browse_history (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          userId TEXT NOT NULL,
+          itemId TEXT NOT NULL,
+          itemType TEXT NOT NULL,
+          itemTitle TEXT NOT NULL,
+          visitCount INTEGER DEFAULT 1,
+          lastVisitTime INTEGER NOT NULL,
+          createdAt INTEGER NOT NULL,
+          UNIQUE(userId, itemId, itemType)
+        )
+      `;
+      await this.store.executeSql(createHistoryTableSql);
+
+      console.info('[RelationalDB] 所有表创建成功');
+    } catch (error) {
+      console.error('[RelationalDB] 创建表失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 插入或更新用户信息
+   */
+  async saveUserInfo(userInfo: UserInfo): Promise<number> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const valueBucket: relationalStore.ValuesBucket = {
+        userId: userInfo.userId,
+        username: userInfo.username,
+        email: userInfo.email || '',
+        avatar: userInfo.avatar || '',
+        preferences: userInfo.preferences || '{}',
+        createdAt: userInfo.createdAt || Date.now(),
+        updatedAt: Date.now()
+      };
+
+      const rowId = await this.store.insert('user_info', valueBucket, relationalStore.ConflictResolution.ON_CONFLICT_REPLACE);
+      console.info(`[RelationalDB] 用户信息保存成功: ${rowId}`);
+      return rowId;
+    } catch (error) {
+      console.error('[RelationalDB] 保存用户信息失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 获取用户信息
+   */
+  async getUserInfo(userId: string): Promise<UserInfo | null> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const predicates = new relationalStore.RdbPredicates('user_info');
+      predicates.equalTo('userId', userId);
+
+      const resultSet = await this.store.query(predicates);
+      
+      if (resultSet.goToFirstRow()) {
+        const userInfo: UserInfo = {
+          id: resultSet.getLong(resultSet.getColumnIndex('id')),
+          userId: resultSet.getString(resultSet.getColumnIndex('userId')),
+          username: resultSet.getString(resultSet.getColumnIndex('username')),
+          email: resultSet.getString(resultSet.getColumnIndex('email')),
+          avatar: resultSet.getString(resultSet.getColumnIndex('avatar')),
+          preferences: resultSet.getString(resultSet.getColumnIndex('preferences')),
+          createdAt: resultSet.getLong(resultSet.getColumnIndex('createdAt')),
+          updatedAt: resultSet.getLong(resultSet.getColumnIndex('updatedAt'))
+        };
+        resultSet.close();
+        return userInfo;
+      }
+      
+      resultSet.close();
+      return null;
+    } catch (error) {
+      console.error('[RelationalDB] 获取用户信息失败:', error);
+      return null;
+    }
+  }
+
+  /**
+   * 添加收藏
+   */
+  async addFavorite(favorite: FavoriteRecord): Promise<number> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const valueBucket: relationalStore.ValuesBucket = {
+        userId: favorite.userId,
+        itemId: favorite.itemId,
+        itemType: favorite.itemType,
+        itemTitle: favorite.itemTitle,
+        itemDescription: favorite.itemDescription || '',
+        itemImageUrl: favorite.itemImageUrl || '',
+        createdAt: Date.now()
+      };
+
+      const rowId = await this.store.insert('favorites', valueBucket, relationalStore.ConflictResolution.ON_CONFLICT_REPLACE);
+      console.info(`[RelationalDB] 收藏添加成功: ${rowId}`);
+      return rowId;
+    } catch (error) {
+      console.error('[RelationalDB] 添加收藏失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 获取用户收藏列表
+   */
+  async getUserFavorites(userId: string): Promise<FavoriteRecord[]> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const predicates = new relationalStore.RdbPredicates('favorites');
+      predicates.equalTo('userId', userId);
+      predicates.orderByDesc('createdAt');
+
+      const resultSet = await this.store.query(predicates);
+      const favorites: FavoriteRecord[] = [];
+
+      while (resultSet.goToNextRow()) {
+        favorites.push({
+          id: resultSet.getLong(resultSet.getColumnIndex('id')),
+          userId: resultSet.getString(resultSet.getColumnIndex('userId')),
+          itemId: resultSet.getString(resultSet.getColumnIndex('itemId')),
+          itemType: resultSet.getString(resultSet.getColumnIndex('itemType')),
+          itemTitle: resultSet.getString(resultSet.getColumnIndex('itemTitle')),
+          itemDescription: resultSet.getString(resultSet.getColumnIndex('itemDescription')),
+          itemImageUrl: resultSet.getString(resultSet.getColumnIndex('itemImageUrl')),
+          createdAt: resultSet.getLong(resultSet.getColumnIndex('createdAt'))
+        });
+      }
+
+      resultSet.close();
+      return favorites;
+    } catch (error) {
+      console.error('[RelationalDB] 获取收藏列表失败:', error);
+      return [];
+    }
+  }
+
+  /**
+   * 删除收藏
+   */
+  async removeFavorite(userId: string, itemId: string, itemType: string): Promise<number> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const predicates = new relationalStore.RdbPredicates('favorites');
+      predicates.equalTo('userId', userId);
+      predicates.and();
+      predicates.equalTo('itemId', itemId);
+      predicates.and();
+      predicates.equalTo('itemType', itemType);
+
+      const rows = await this.store.delete(predicates);
+      console.info(`[RelationalDB] 删除收藏: ${rows}条`);
+      return rows;
+    } catch (error) {
+      console.error('[RelationalDB] 删除收藏失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 添加或更新浏览历史
+   */
+  async addBrowseHistory(history: BrowseHistory): Promise<number> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      // 先查询是否存在
+      const predicates = new relationalStore.RdbPredicates('browse_history');
+      predicates.equalTo('userId', history.userId);
+      predicates.and();
+      predicates.equalTo('itemId', history.itemId);
+      predicates.and();
+      predicates.equalTo('itemType', history.itemType);
+
+      const resultSet = await this.store.query(predicates);
+      
+      let valueBucket: relationalStore.ValuesBucket;
+      
+      if (resultSet.goToFirstRow()) {
+        // 存在则更新访问次数和时间
+        const visitCount = resultSet.getLong(resultSet.getColumnIndex('visitCount')) + 1;
+        valueBucket = {
+          visitCount: visitCount,
+          lastVisitTime: Date.now()
+        };
+        resultSet.close();
+        
+        const rows = await this.store.update(valueBucket, predicates);
+        console.info(`[RelationalDB] 更新浏览历史: ${rows}条`);
+        return rows;
+      } else {
+        // 不存在则插入
+        resultSet.close();
+        valueBucket = {
+          userId: history.userId,
+          itemId: history.itemId,
+          itemType: history.itemType,
+          itemTitle: history.itemTitle,
+          visitCount: 1,
+          lastVisitTime: Date.now(),
+          createdAt: Date.now()
+        };
+
+        const rowId = await this.store.insert('browse_history', valueBucket);
+        console.info(`[RelationalDB] 添加浏览历史: ${rowId}`);
+        return rowId;
+      }
+    } catch (error) {
+      console.error('[RelationalDB] 添加浏览历史失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 获取用户浏览历史
+   */
+  async getUserBrowseHistory(userId: string, limit: number = 20): Promise<BrowseHistory[]> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const predicates = new relationalStore.RdbPredicates('browse_history');
+      predicates.equalTo('userId', userId);
+      predicates.orderByDesc('lastVisitTime');
+      predicates.limitAs(limit);
+
+      const resultSet = await this.store.query(predicates);
+      const histories: BrowseHistory[] = [];
+
+      while (resultSet.goToNextRow()) {
+        histories.push({
+          id: resultSet.getLong(resultSet.getColumnIndex('id')),
+          userId: resultSet.getString(resultSet.getColumnIndex('userId')),
+          itemId: resultSet.getString(resultSet.getColumnIndex('itemId')),
+          itemType: resultSet.getString(resultSet.getColumnIndex('itemType')),
+          itemTitle: resultSet.getString(resultSet.getColumnIndex('itemTitle')),
+          visitCount: resultSet.getLong(resultSet.getColumnIndex('visitCount')),
+          lastVisitTime: resultSet.getLong(resultSet.getColumnIndex('lastVisitTime')),
+          createdAt: resultSet.getLong(resultSet.getColumnIndex('createdAt'))
+        });
+      }
+
+      resultSet.close();
+      return histories;
+    } catch (error) {
+      console.error('[RelationalDB] 获取浏览历史失败:', error);
+      return [];
+    }
+  }
+
+  /**
+   * 清空用户浏览历史
+   */
+  async clearBrowseHistory(userId: string): Promise<number> {
+    if (!this.store) {
+      throw new Error('数据库未初始化');
+    }
+
+    try {
+      const predicates = new relationalStore.RdbPredicates('browse_history');
+      predicates.equalTo('userId', userId);
+
+      const rows = await this.store.delete(predicates);
+      console.info(`[RelationalDB] 清空浏览历史: ${rows}条`);
+      return rows;
+    } catch (error) {
+      console.error('[RelationalDB] 清空浏览历史失败:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * 创建评论表
+   */
+  private async createReviewRecordTable(): Promise<void> {
+    if (!this.store) return;
+    
+    const sql = `
+      CREATE TABLE IF NOT EXISTS reviews (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        userId TEXT NOT NULL,
+        itemId TEXT NOT NULL,
+        itemType TEXT NOT NULL,
+        rating INTEGER NOT NULL,
+        content TEXT NOT NULL,
+        images TEXT,
+        helpful INTEGER DEFAULT 0,
+        createdAt INTEGER NOT NULL
+      )
+    `;
+    await this.store.executeSql(sql);
+    console.info('[RelationalDB] 评论表创建成功');
+  }
+
+  /**
+   * 创建订单表
+   */
+  private async createOrderRecordTable(): Promise<void> {
+    if (!this.store) return;
+    
+    const sql = `
+      CREATE TABLE IF NOT EXISTS orders (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        userId TEXT NOT NULL,
+        orderNo TEXT UNIQUE NOT NULL,
+        itemId TEXT NOT NULL,
+        itemType TEXT NOT NULL,
+        itemTitle TEXT NOT NULL,
+        quantity INTEGER NOT NULL,
+        price REAL NOT NULL,
+        totalAmount REAL NOT NULL,
+        status TEXT NOT NULL,
+        contactName TEXT NOT NULL,
+        contactPhone TEXT NOT NULL,
+        createdAt INTEGER NOT NULL,
+        updatedAt INTEGER NOT NULL
+      )
+    `;
+    await this.store.executeSql(sql);
+    console.info('[RelationalDB] 订单表创建成功');
+  }
+
+  /**
+   * 创建行程表
+   */
+  private async createTripRecordTable(): Promise<void> {
+    if (!this.store) return;
+    
+    const sql = `
+      CREATE TABLE IF NOT EXISTS trips (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        userId TEXT NOT NULL,
+        title TEXT NOT NULL,
+        destinations TEXT NOT NULL,
+        startDate INTEGER NOT NULL,
+        endDate INTEGER NOT NULL,
+        days INTEGER NOT NULL,
+        budget REAL,
+        status TEXT NOT NULL,
+        notes TEXT,
+        createdAt INTEGER NOT NULL,
+        updatedAt INTEGER NOT NULL
+      )
+    `;
+    await this.store.executeSql(sql);
+    console.info('[RelationalDB] 行程表创建成功');
+  }
+
+  /**
+   * 创建搜索历史表
+   */
+  private async createSearchHistoryTable(): Promise<void> {
+    if (!this.store) return;
+    
+    const sql = `
+      CREATE TABLE IF NOT EXISTS search_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        userId TEXT NOT NULL,
+        keyword TEXT NOT NULL,
+        category TEXT NOT NULL,
+        searchCount INTEGER DEFAULT 1,
+        lastSearchTime INTEGER NOT NULL,
+        createdAt INTEGER NOT NULL,
+        UNIQUE(userId, keyword, category)
+      )
+    `;
+    await this.store.executeSql(sql);
+    console.info('[RelationalDB] 搜索历史表创建成功');
+  }
+
+  /**
+   * 关闭数据库
+   */
+  async close(): Promise<void> {
+    if (this.store) {
+      await relationalStore.deleteRdbStore(getContext(), this.DATABASE_NAME);
+      this.store = null;
+      console.info('[RelationalDB] 数据库已关闭');
+    }
+  }
+}

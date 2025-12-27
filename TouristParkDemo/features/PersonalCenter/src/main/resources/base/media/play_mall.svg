@@ -1,0 +1,36 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M0 16C0 24.83 7.16 32 16 32C24.83 32 32 24.83 32 16C32 7.16 24.83 0 16 0C7.16 0 0 7.16 0 16Z"
+          fill="#F78377" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M10.13 20.46C15.79 20.46 20.37 15.88 20.37 10.23C20.37 5.48 17.13 1.48 12.73 0.33C6.43 1.63 1.48 6.65 0.28 12.99C1.48 17.3 5.44 20.46 10.13 20.46Z"
+          fill="#FFFFFF" fill-opacity="0.200000" fill-rule="evenodd"/>
+    <path d="M16 32C24.83 32 32 24.83 32 16C32 15 31.9 14.03 31.73 13.09C29 10.5 25.3 8.91 21.24 8.91C12.81 8.91 5.98 15.74 5.98 24.17C5.98 25.89 6.26 27.54 6.79 29.08C9.39 30.92 12.57 32 16 32Z"
+          fill="#FFFFFF" fill-opacity="0.149020" fill-rule="evenodd"/>
+    <g opacity="0.500000">
+        <path d="M21.39 18.08L17.87 9.96C17.39 8.8 16.04 8.28 14.8 8.72L7.67 11.44C6.43 11.92 5.84 13.2 6.23 14.4L9.08 22.76C9.28 23.36 9.76 23.92 10.28 24.16C10.87 24.44 11.52 24.48 12.08 24.28L20.15 21.16C20.72 20.96 21.15 20.48 21.39 19.84C21.63 19.32 21.63 18.64 21.39 18.08L21.39 18.08Z"
+              fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+    </g>
+    <path d="M25.88 20.6L25.48 10.24C25.43 8.76 24.16 7.6 22.64 7.6L13.68 7.6C12.16 7.6 10.92 8.72 10.84 10.24L10.43 20.56C10.4 21.28 10.68 22.08 11.16 22.6C11.68 23.16 12.4 23.48 13.08 23.48L23.24 23.48C23.92 23.48 24.6 23.16 25.16 22.56C25.68 22.08 25.92 21.36 25.88 20.6L25.88 20.6Z"
+          fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M18.15 15.4C17.11 15.4 16.2 15 15.48 14.28C14.76 13.56 14.39 12.6 14.39 11.6C14.39 11.24 14.67 10.96 15.03 10.96C15.39 10.96 15.67 11.24 15.67 11.6C15.67 13 16.79 14.12 18.2 14.12C19.59 14.12 20.72 13 20.72 11.6C20.72 11.24 21 10.96 21.35 10.96C21.72 10.96 22 11.24 22 11.6C21.96 13.68 20.24 15.4 18.15 15.4L18.15 15.4Z"
+          fill="#F78377" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - /*
+  -    Copyright (c) 2025 Huawei Device Co., Ltd.
+  -    Licensed under the Apache License, Version 2.0 (the "License");
+  -    you may not use this file except in compliance with the License.
+  -    You may obtain a copy of the License at
+  -    http://www.apache.org/licenses/LICENSE-2.0
+  -    Unless required by applicable law or agreed to in writing, software
+  -    distributed under the License is distributed on an "AS IS" BASIS,
+  -    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -    See the License for the specific language governing permissions and
+  -    limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <defs>
+        <linearGradient x1="-28.613938%" y1="14.2662971%" x2="105.600311%" y2="110.41618%" id="linearGradient-1">
+            <stop stop-color="#AB62FF" offset="0%"></stop>
+            <stop stop-color="#71268C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M26.3918367,7.49931973 C33.7989628,7.49931973 39.8040816,13.5044386 39.8040816,20.9115646 C39.8040816,28.3186907 33.7989628,34.3238095 26.3918367,34.3238095 C18.9847107,34.3238095 12.9795918,28.3186907 12.9795918,20.9115646 C12.9795918,13.5044386 18.9847107,7.49931973 26.3918367,7.49931973 Z" id="path-2"></path>
+        <filter x="-22.4%" y="-22.4%" width="144.7%" height="144.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="6" dy="6" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.920282733   0 0 0 0 0.864055354   0 0 0 0 1  0 0 0 0.455930056 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M17.1619048,0 C26.6398402,0 34.3238095,7.68396931 34.3238095,17.1619048 C34.3238095,26.6398402 26.6398402,34.3238095 17.1619048,34.3238095 C7.68396931,34.3238095 0,26.6398402 0,17.1619048 C0,7.68396931 7.68396931,0 17.1619048,0 Z" id="path-4"></path>
+        <filter x="-31.4%" y="-31.4%" width="162.8%" height="162.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-10" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.826467997   0 0 0 0 0.560327744   0 0 0 0 1  0 0 0 0.302556818 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="方特" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的" transform="translate(-200.000000, -243.000000)">
+            <g id="编组-10" transform="translate(201.000000, 243.000000)">
+                <g id="Group-2" transform="translate(0.000000, 3.000000)">
+                    <g id="Stroke-1-Copy">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Group">
+                        <g id="Stroke-1">
+                            <use fill="#EEE6FF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-4"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use stroke-opacity="0.273621886" stroke="#FFFFFF" stroke-width="1.56334575" xlink:href="#path-4"></use>
+                        </g>
+                        <path d="M22.8500986,22.6339799 C22.6764787,22.9476561 22.4191493,23.1707866 22.1215152,23.2613323 C22.0192035,23.29367 21.9137914,23.3066051 21.8083793,23.3066051 C21.5975552,23.3066051 21.3867311,23.2451634 21.1883084,23.1287475 L16.3827583,20.0987003 C16.2215398,20.0049209 16.0231171,19.8917387 15.917705,19.7462189 C15.3069351,19.3775685 15,18.9959831 15,18.6111638 L15,10.2518555 C15,9.50808726 15.5797664,8.90660511 16.292848,8.90660511 C17.0059296,8.90660511 17.585696,9.51132104 17.585696,10.2518555 L17.585696,17.9741102 L22.2672319,20.793962 C22.9307078,21.19495 23.1911376,22.0195627 22.8500986,22.6339799 Z" id="路径" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

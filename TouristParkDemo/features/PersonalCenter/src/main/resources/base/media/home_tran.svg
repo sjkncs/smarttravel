@@ -1,0 +1,39 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M16 32C7.16 32 0 24.83 0 16C0 7.16 7.16 0 16 0C24.83 0 32 7.16 32 16C32 24.83 24.83 32 16 32Z"
+          fill="#34B495" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M10.13 20.46C15.79 20.46 20.37 15.88 20.37 10.23C20.37 5.48 17.13 1.48 12.73 0.33C6.43 1.63 1.48 6.65 0.28 12.99C1.48 17.3 5.44 20.46 10.13 20.46Z"
+          fill="#FFFFFF" fill-opacity="0.200000" fill-rule="evenodd"/>
+    <path d="M16 32C24.83 32 32 24.83 32 16C32 15 31.9 14.03 31.73 13.09C29 10.5 25.3 8.91 21.24 8.91C12.81 8.91 5.98 15.74 5.98 24.17C5.98 25.89 6.26 27.54 6.79 29.08C9.39 30.92 12.57 32 16 32Z"
+          fill="#FFFFFF" fill-opacity="0.149020" fill-rule="evenodd"/>
+    <path d="M12.9474 24L12.9474 22.3158C12.9474 21.7558 12.5073 21.3158 11.9474 21.3158C11.3873 21.3158 10.9474 21.7558 10.9474 22.3158L10.9474 24C10.9474 24.56 11.3873 25 11.9474 25C12.5073 25 12.9474 24.56 12.9474 24ZM21.3684 22.3158L21.3684 24C21.3684 24.56 20.9283 25 20.3684 25C19.8083 25 19.3684 24.56 19.3684 24L19.3684 22.3158C19.3684 21.7558 19.8083 21.3158 20.3684 21.3158C20.9283 21.3158 21.3684 21.7558 21.3684 22.3158Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M22.7778 21.1801L22.7778 15.9094L9.44446 15.9094L9.44446 21.1801C9.44446 21.8038 10.2231 22.3094 11.1836 22.3094L21.0387 22.3094C21.9991 22.3094 22.7778 21.8038 22.7778 21.1801ZM12.7894 19.7895C12.7894 20.2541 12.412 20.6316 11.9474 20.6316C11.4827 20.6316 11.1052 20.2541 11.1052 19.7895C11.1052 19.3248 11.4827 18.9474 11.9474 18.9474C12.412 18.9474 12.7894 19.3248 12.7894 19.7895ZM21.2106 19.7895C21.2106 20.2541 20.8331 20.6316 20.3684 20.6316C19.9038 20.6316 19.5264 20.2541 19.5264 19.7895C19.5264 19.3248 19.9038 18.9474 20.3684 18.9474C20.8331 18.9474 21.2106 19.3248 21.2106 19.7895Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <mask id="mask_50_9510" fill="white">
+        <path d="M11.5333 8L20.8667 8C21.9712 8 22.8667 8.89543 22.8667 10L22.8667 14.9333L9.53333 14.9333L9.53333 10C9.53333 8.89543 10.4287 8 11.5333 8ZM18.4 10L14.4 10C13.8477 10 13.4 10.4477 13.4 11C13.4 11.5523 13.8477 12 14.4 12L18.4 12C18.9523 12 19.4 11.5523 19.4 11C19.4 10.4477 18.9523 10 18.4 10Z"
+              clip-rule="evenodd" fill="" fill-opacity="1.000000" fill-rule="evenodd"/>
+    </mask>
+    <path d="M11.5333 8L20.8667 8C21.9712 8 22.8667 8.89543 22.8667 10L22.8667 14.9333L9.53333 14.9333L9.53333 10C9.53333 8.89543 10.4287 8 11.5333 8ZM18.4 10L14.4 10C13.8477 10 13.4 10.4477 13.4 11C13.4 11.5523 13.8477 12 14.4 12L18.4 12C18.9523 12 19.4 11.5523 19.4 11C19.4 10.4477 18.9523 10 18.4 10Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" mask="url(#mask_50_9510)"/>
+    <path d="" clip-rule="evenodd" fill="#000000" fill-opacity="0.000000" fill-rule="evenodd"/>
+</svg>

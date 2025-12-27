@@ -1,0 +1,31 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="15.960693" height="14.365417" viewBox="0 0 15.9607 14.3654" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs>
+        <linearGradient x1="7.980302" y1="14.365414" x2="7.980302" y2="0.000000" id="paint_linear_50_9226_0"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4E74BF" stop-opacity="0.796078"/>
+            <stop offset="0.544631" stop-color="#4C72C0"/>
+            <stop offset="1.000000" stop-color="#3259CE"/>
+        </linearGradient>
+    </defs>
+    <path d="M15.8462 4.37692L13.4497 0.383423C13.3096 0.153381 13.0566 0 12.7671 0L3.19067 0C2.90137 0 2.64819 0.153381 2.50635 0.387268L0.11377 4.37692C-0.0588379 4.66641 -0.0339355 5.03259 0.180908 5.29333L7.36255 14.0721L7.3645 14.074C7.51025 14.2504 7.73071 14.3654 7.97998 14.3654C8.22925 14.3654 8.44971 14.2523 8.59717 14.074L15.7791 5.29526C15.9937 5.03259 16.0205 4.66641 15.8462 4.37692ZM8.49365 9.86578L12.6462 4.80252C12.8687 4.5322 12.8284 4.13342 12.5581 3.91296C12.2878 3.69058 11.8889 3.73083 11.6667 4.00116L7.97998 8.49695L4.29321 3.99924C4.0708 3.72891 3.67212 3.68866 3.40161 3.91104C3.13135 4.13342 3.09106 4.5322 3.31348 4.80252L7.46216 9.86578C7.58496 10.0154 7.76318 10.0901 7.94165 10.0939C7.95068 10.0952 7.95874 10.0948 7.96655 10.0944C7.97046 10.0941 7.97412 10.0939 7.97803 10.0939C7.98267 10.0939 7.98706 10.0942 7.99121 10.0944C7.99927 10.0948 8.00684 10.0952 8.0144 10.0939C8.19458 10.092 8.37109 10.0154 8.49365 9.86578Z"
+          clip-rule="evenodd" fill="url(#paint_linear_50_9226_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,48 @@
+<!--
+  - /*
+  -     Copyright (c) 2025 Huawei Device Co., Ltd.
+  -     Licensed under the Apache License, Version 2.0 (the "License");
+  -     you may not use this file except in compliance with the License.
+  -     You may obtain a copy of the License at
+  -
+  -       http://www.apache.org/licenses/LICENSE-2.0
+  -
+  -     Unless required by applicable law or agreed to in writing, software
+  -     distributed under the License is distributed on an "AS IS" BASIS,
+  -     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -     See the License for the specific language governing permissions and
+  -     limitations under the License.
+  -  */
+  -->
+
+<svg width="10.000000" height="10.000000" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs>
+        <clipPath id="clip4_1245">
+            <rect id="star_trophy_fill" width="10.000000" height="10.000000" fill="white" fill-opacity="0"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip4_1245)">
+        <g opacity="0.000000">
+            <rect id="rect" width="10.000000" height="10.000000" fill="#000000" fill-opacity="1.000000"/>
+        </g>
+        <mask id="mask4_1240" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="10.000000"
+              height="10.000000">
+            <rect id="rect" width="10.000000" height="10.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+            <path id="path"
+                  d="M5.92 4.12C5.9 4.14 5.88 4.16 5.87 4.2C5.85 4.23 5.85 4.26 5.85 4.29L6.05 5.1C6.08 5.18 6.05 5.25 5.99 5.3C5.92 5.35 5.85 5.35 5.79 5.3L5.09 4.85C5.02 4.81 4.95 4.81 4.89 4.85L4.19 5.3C4.12 5.35 4.05 5.35 3.99 5.3C3.92 5.25 3.9 5.18 3.92 5.1L4.12 4.29C4.13 4.22 4.11 4.16 4.05 4.12L3.42 3.59C3.36 3.54 3.35 3.48 3.37 3.39C3.39 3.31 3.44 3.27 3.52 3.27L4.34 3.22C4.38 3.21 4.41 3.19 4.44 3.17C4.47 3.15 4.49 3.13 4.5 3.09L4.82 2.32C4.85 2.25 4.91 2.22 4.99 2.22C5.07 2.22 5.13 2.25 5.15 2.32L5.47 3.09C5.49 3.13 5.51 3.15 5.54 3.17C5.57 3.19 5.6 3.2 5.64 3.2L6.45 3.27C6.53 3.27 6.59 3.31 6.62 3.39C6.64 3.47 6.62 3.54 6.55 3.59L5.92 4.12Z"
+                  fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </mask>
+        <g mask="url(#mask4_1240)">
+            <path id="path"
+                  d="M8.02 5C8.28 4.98 8.53 4.89 8.75 4.75C8.97 4.61 9.15 4.42 9.28 4.19C9.41 3.95 9.47 3.7 9.47 3.44C9.47 3.16 9.41 2.91 9.28 2.68C9.15 2.45 8.98 2.26 8.75 2.12C8.53 1.98 8.29 1.89 8.02 1.87L8.02 5ZM1.97 1.87C1.7 1.9 1.45 1.99 1.23 2.14C1.01 2.28 0.83 2.47 0.7 2.7C0.58 2.92 0.52 3.17 0.52 3.44C0.52 3.7 0.58 3.94 0.7 4.17C0.83 4.4 1.01 4.59 1.23 4.74C1.45 4.89 1.7 4.98 1.97 5L1.97 1.87Z"
+                  fill="#EE6F21" fill-opacity="1.000000" fill-rule="nonzero"/>
+            <path id="path"
+                  d="M8.02 1.87L8.02 1.55C8.02 1.39 7.97 1.23 7.89 1.09C7.81 0.95 7.69 0.83 7.54 0.75C7.4 0.66 7.24 0.62 7.07 0.62L2.92 0.62C2.75 0.62 2.59 0.66 2.44 0.75C2.3 0.83 2.18 0.95 2.1 1.09C2.02 1.23 1.97 1.39 1.97 1.55L1.97 1.87L1.97 5C2.05 5.43 2.22 5.83 2.48 6.19C2.74 6.54 3.06 6.84 3.44 7.07C3.82 7.29 4.24 7.43 4.67 7.47L4.67 8.75L3.32 8.75C3.2 8.75 3.11 8.8 3.05 8.9C3 9 3 9.11 3.05 9.21C3.11 9.31 3.2 9.37 3.32 9.37L6.67 9.37C6.79 9.37 6.88 9.31 6.94 9.21C6.99 9.11 6.99 9 6.94 8.9C6.88 8.8 6.79 8.75 6.67 8.75L5.3 8.75L5.3 7.47C5.75 7.43 6.16 7.29 6.54 7.07C6.92 6.84 7.23 6.55 7.49 6.19C7.75 5.83 7.92 5.43 8.02 5L8.02 1.87Z"
+                  fill="#EE6F21" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </g>
+    </g>
+</svg>

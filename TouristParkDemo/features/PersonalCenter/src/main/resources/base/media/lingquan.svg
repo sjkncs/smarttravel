@@ -1,0 +1,28 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <circle cx="18.000000" cy="18.000000" r="18.000000" fill="#FEB754" fill-opacity="1.000000"/>
+    <circle cx="18.000000" cy="18.000000" r="17.500000" stroke="#979797" stroke-opacity="0" stroke-width="1.000000"/>
+    <path d="M9.90234 25.0618L26.0728 25.0618C27.1221 25.0582 27.9717 24.2086 27.9751 23.1595L27.9751 13.6475C27.9717 12.5983 27.1221 11.7485 26.0728 11.745L9.90234 11.745C8.85303 11.7485 8.00342 12.5983 8 13.6475L8 23.1595C8.00342 24.2086 8.85327 25.0582 9.90234 25.0618ZM10.616 15.0742L25.3594 15.0742C25.74 15.0742 26.0728 14.7413 26.0728 14.3609C26.0728 13.9804 25.74 13.6475 25.3594 13.6475L10.616 13.6475C10.2351 13.6475 9.90234 13.9804 9.90234 14.3609C9.90234 14.7413 10.2351 15.0742 10.616 15.0742ZM20.6035 23.1595L18.2253 23.1595C17.845 23.1595 17.512 22.8265 17.512 22.4459C17.512 22.0653 17.845 21.7326 18.2253 21.7326L20.6035 21.7326C20.9839 21.7326 21.3167 22.0655 21.3167 22.4459C21.3167 22.8263 20.9839 23.1595 20.6035 23.1595ZM22.9814 23.1595L25.3594 23.1595C25.74 23.1595 26.0728 22.8263 26.0728 22.4459C26.0728 22.0655 25.74 21.7326 25.3594 21.7326L22.9814 21.7326C22.6008 21.7326 22.2681 22.0653 22.2681 22.4459C22.2681 22.8265 22.6008 23.1595 22.9814 23.1595Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M14.7 7.17C13.75 6.75 12.61 7.13 12.18 8.08L10.47 11.74L24.5 11.74L14.7 7.17Z" fill="#FFFFFF"
+          fill-opacity="0.501961" fill-rule="evenodd"/>
+</svg>

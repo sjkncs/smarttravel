@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - /*
+  -    Copyright (c) 2025 Huawei Device Co., Ltd.
+  -    Licensed under the Apache License, Version 2.0 (the "License");
+  -    you may not use this file except in compliance with the License.
+  -    You may obtain a copy of the License at
+  -    http://www.apache.org/licenses/LICENSE-2.0
+  -    Unless required by applicable law or agreed to in writing, software
+  -    distributed under the License is distributed on an "AS IS" BASIS,
+  -    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -    See the License for the specific language governing permissions and
+  -    limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <g id="方特" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="游园" transform="translate(-167.000000, -324.000000)" fill-rule="nonzero">
+            <g id="商城" transform="translate(167.000000, 324.000000)">
+                <path d="M0,16 C0,24.836556 7.163444,32 16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 Z" id="路径" fill="#F78377"></path>
+                <path d="M10.1377744,20.4693414 C15.7903164,20.4693414 20.3724451,15.8871158 20.3724451,10.2346707 C20.3724451,5.48035731 17.1307797,1.48319153 12.7371385,0.332984094 C6.43168509,1.63948525 1.48428159,6.65679941 0.280853906,12.9994368 C1.48711581,17.308754 5.44322181,20.4693414 10.1377744,20.4693414 Z" id="路径" fill-opacity="0.2" fill="#FFFFFF"></path>
+                <path d="M16,32 C24.8364572,32 32,24.8364572 32,16 C32,15.0073217 31.9096442,14.0358153 31.7364421,13.0931597 C29.0017865,10.5031219 25.3085844,8.91445875 21.2445117,8.91445875 C12.8160363,8.91445875 5.98334594,15.7471249 5.98334594,24.1756245 C5.98334594,25.8931113 6.26722784,27.5444663 6.79029825,29.0851173 C9.39457987,30.9215443 12.571349,32 16,32 Z" id="路径" fill-opacity="0.15" fill="#FFFFFF"></path>
+                <path d="M21.4,18.08 L17.88,9.96 C17.4,8.8 16.04,8.28 14.8,8.72 L7.68,11.44 C6.44,11.92 5.84,13.2 6.24,14.4 L9.08,22.76 C9.28,23.36 9.76,23.92 10.28,24.16 C10.88,24.44 11.52,24.48 12.08,24.28 L20.16,21.16 C20.72,20.96 21.16,20.48 21.4,19.84 C21.64,19.32 21.64,18.64 21.4,18.08 L21.4,18.08 Z" id="路径" fill="#FFFFFF" opacity="0.5"></path>
+                <path d="M25.88,20.6 L25.48,10.24 C25.44,8.76 24.16,7.6 22.64,7.6 L13.68,7.6 C12.16,7.6 10.92,8.72 10.84,10.24 L10.44,20.56 C10.4,21.28 10.68,22.08 11.16,22.6 C11.68,23.16 12.4,23.48 13.08,23.48 L23.24,23.48 C23.92,23.48 24.6,23.16 25.16,22.56 C25.68,22.08 25.92,21.36 25.88,20.6 L25.88,20.6 Z" id="路径" fill="#FFFFFF"></path>
+                <path d="M18.16,15.4 C17.12,15.4 16.2,15 15.48,14.28 C14.76,13.56 14.4,12.6 14.4,11.6 C14.4,11.24 14.68,10.96 15.04,10.96 C15.4,10.96 15.68,11.24 15.68,11.6 C15.68,13 16.8,14.12 18.2,14.12 C19.6,14.12 20.72,13 20.72,11.6 C20.72,11.24 21,10.96 21.36,10.96 C21.72,10.96 22,11.24 22,11.6 C21.96,13.68 20.24,15.4 18.16,15.4 L18.16,15.4 Z" id="路径" fill="#F78377"></path>
+            </g>
+        </g>
+    </g>
+</svg>

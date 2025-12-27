@@ -1,0 +1,32 @@
+<!--
+  -   Copyright (c) 2025 Huawei Device Co., Ltd.
+  -   Licensed under the Apache License, Version 2.0 (the "License");
+  -   you may not use this file except in compliance with the License.
+  -   You may obtain a copy of the License at
+  -
+  -       http://www.apache.org/licenses/LICENSE-2.0
+  -
+  -   Unless required by applicable law or agreed to in writing, software
+  -   distributed under the License is distributed on an "AS IS" BASIS,
+  -   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -   See the License for the specific language governing permissions and
+  -   limitations under the License.
+  -->
+
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip12_2000">
+			<rect id="arrow_right_up_and_square" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip12_2000)">
+		<g opacity="0.000000">
+			<rect id="rect" width="24.000000" height="24.000000" fill="#000000" fill-opacity="1.000000"/>
+		</g>
+		<path id="path" d="M15 2.26C14.79 2.26 14.61 2.33 14.47 2.47C14.33 2.61 14.26 2.79 14.26 3C14.26 3.2 14.33 3.38 14.47 3.53C14.61 3.66 14.79 3.73 15 3.73L19.2 3.73L10.66 12.31C10.51 12.45 10.44 12.63 10.44 12.84C10.44 13.04 10.51 13.22 10.66 13.37C10.8 13.51 10.97 13.58 11.18 13.58C11.39 13.58 11.57 13.51 11.71 13.37L20.26 4.82L20.26 9C20.26 9.2 20.33 9.38 20.46 9.53C20.61 9.66 20.79 9.73 21 9.73C21.2 9.73 21.38 9.66 21.53 9.53C21.67 9.38 21.74 9.2 21.74 9L21.74 3.42C21.74 3.1 21.62 2.83 21.4 2.6C21.16 2.37 20.89 2.26 20.57 2.26L15 2.26Z" fill="#000000" fill-opacity="0.901961" fill-rule="nonzero"/>
+		<path id="path" d="M18 21.74C18.67 21.74 19.29 21.57 19.87 21.24C20.45 20.9 20.9 20.45 21.24 19.87C21.57 19.29 21.74 18.67 21.74 18L21.74 12.89C21.74 12.68 21.67 12.5 21.53 12.36C21.38 12.21 21.2 12.14 21 12.14C20.79 12.14 20.61 12.21 20.46 12.36C20.33 12.5 20.26 12.68 20.26 12.89L20.26 18C20.26 18.62 20.04 19.16 19.6 19.6C19.16 20.04 18.62 20.26 18 20.26L6 20.26C5.37 20.26 4.83 20.04 4.39 19.6C3.95 19.16 3.73 18.62 3.73 18L3.73 6C3.73 5.37 3.95 4.84 4.39 4.4C4.83 3.96 5.37 3.73 6 3.73L11.06 3.73C11.27 3.73 11.45 3.66 11.59 3.53C11.73 3.38 11.81 3.2 11.81 3C11.81 2.79 11.73 2.61 11.59 2.47C11.45 2.33 11.27 2.26 11.06 2.26L6 2.26C5.31 2.26 4.67 2.42 4.09 2.76C3.52 3.09 3.07 3.54 2.73 4.13C2.39 4.7 2.22 5.32 2.22 6L2.22 18C2.22 18.67 2.39 19.29 2.73 19.87C3.07 20.45 3.52 20.9 4.09 21.24C4.67 21.57 5.31 21.74 6 21.74L18 21.74Z" fill="#000000" fill-opacity="0.901961" fill-rule="nonzero"/>
+	</g>
+</svg>

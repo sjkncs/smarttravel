@@ -1,0 +1,32 @@
+<!--
+  - Copyright (c) 2025 Huawei Device Co., Ltd.
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs/>
+    <path d="M0 16C0 24.83 7.16 32 16 32C24.83 32 32 24.83 32 16C32 7.16 24.83 0 16 0C7.16 0 0 7.16 0 16Z"
+          fill="#FEB833" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M0 16C0 24.83 7.16 32 16 32C24.83 32 32 24.83 32 16C32 7.16 24.83 0 16 0C7.16 0 0 7.16 0 16Z"
+          fill="#00B17A" fill-opacity="1.000000" fill-rule="evenodd"/>
+    <path d="M10.13 20.46C15.79 20.46 20.37 15.88 20.37 10.23C20.37 5.48 17.13 1.48 12.73 0.33C6.43 1.63 1.48 6.65 0.28 12.99C1.48 17.3 5.44 20.46 10.13 20.46Z"
+          fill="#FFFFFF" fill-opacity="0.200000" fill-rule="evenodd"/>
+    <path d="M16 32C24.83 32 32 24.83 32 16C32 15 31.9 14.03 31.73 13.09C29 10.5 25.3 8.91 21.24 8.91C12.81 8.91 5.98 15.74 5.98 24.17C5.98 25.89 6.26 27.54 6.79 29.08C9.39 30.92 12.57 32 16 32Z"
+          fill="#FFFFFF" fill-opacity="0.149020" fill-rule="evenodd"/>
+    <path d="M23.2727 20.5964L23.2803 20.5964C23.7532 20.5964 24.1375 20.9807 24.1335 21.4534C24.1335 21.926 23.7493 22.3103 23.2766 22.3103L8.70557 22.3103C8.23291 22.3103 7.84863 21.926 7.84863 21.4534C7.84863 21.0537 8.12524 20.7193 8.49609 20.6252C9.12646 20.3446 9.56641 19.7144 9.56641 18.9803C9.56641 18.9458 9.55884 18.915 9.55688 18.8824L9.56274 18.8824L9.56274 14.1689L9.57422 14.1689C9.67603 11.2001 11.8569 8.76553 14.7065 8.26788L14.7065 8.16986C14.7065 7.57804 15.187 7.09766 15.7788 7.09766C16.3706 7.09766 16.8511 7.57804 16.8511 8.16986L16.8511 8.26788C19.7024 8.76553 21.8816 11.2001 21.9834 14.1689L21.9949 14.1689L21.9949 18.8824L21.9988 18.8824C21.9988 18.8939 21.9949 18.9054 21.9949 18.9189C21.9949 19.7201 22.5369 20.3888 23.2727 20.5964ZM18.7039 23.1692C18.2217 24.1818 17.1917 24.8832 15.9963 24.8832C14.7993 24.8832 13.7693 24.1799 13.2891 23.1692L18.7039 23.1692Z"
+          clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
